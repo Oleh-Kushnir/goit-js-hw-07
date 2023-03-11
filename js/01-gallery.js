@@ -33,11 +33,9 @@ function onPictureClick(evt) {
     return;
   }
 
-  galleryCont.addEventListener('click', onModal);
-}
+    // galleryCont.addEventListener('click', onModal);
 
-function onModal(evt) {
-  const instance = basicLightbox.create(
+    const instance = basicLightbox.create(
     `<img src="${evt.target.dataset.source}"/>`,
     {
       onShow: (instance) => {
@@ -57,4 +55,4 @@ function onModal(evt) {
   }
 }
 
-console.log(galleryItems);
+console.log(galleryItems); 
